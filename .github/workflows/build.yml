@@ -5,6 +5,7 @@ on:
       - master
   pull_request:
     types: [opened, synchronize, reopened]
+  workflow_dispatch: # Allows manual triggering
 jobs:
   sonarqube:
     name: SonarQube
